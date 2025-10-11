@@ -57,10 +57,12 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
+    width: 96%;
     text-transform: uppercase;
     background-color: #000000;
+
 }
 
 header {
@@ -115,7 +117,7 @@ header {
 .nameSist-container {
     margin: 0;
     padding: 0;
-    max-width: 400px;
+    max-width: 500px;
     height: 100%;
     display: flex;
     align-items: center;    
@@ -123,7 +125,7 @@ header {
 
 .name-sist {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     letter-spacing: 1.2px;
     line-height: 1.9rem;
     filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 8px #00ffff);
@@ -394,6 +396,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    
 }
 
 
@@ -440,7 +443,7 @@ footer {
 
     .username {
         padding: 10px;
-        font-size: 1.0rem;
+        font-size: 1.1rem;
     }
 
     .img-user {
@@ -512,7 +515,7 @@ footer {
     }
 
     .siglas-app {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         letter-spacing: 18px;
         padding: 0 0 0 40px;
     }
@@ -553,10 +556,12 @@ footer {
 
     .menu-hamb {
         height: 90%;
-        min-width: 70px;        
+        min-width: 70px;
+        border: 2px solid #00ffff;       
     }
 
     .ico-menu {
-        height: 75%;        
+        height: 75%;
+        border: 3px solid #00ffff;
     }
 }

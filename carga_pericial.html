@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-cp.css">
+    <title>CARGA-PERICIAL-SIPAF-AB</title>
+    <link rel="stylesheet" href="main.js"> <!-- falta la palabra para que se caregue al final de la pagina -->
+</head>
+
+<body>
+    <!-- Oculto para alinear caja sin scroll -->
+    <div class="menu-fondo">
+        <img src="ico-app/icono_sipaf_ab.png" alt="Logo UV" class="ico">
+    </div>
+
+    <header>
+        <h2>carga pericial</h2>
+        <!-- falta  codigo para agregar como submenu de carga pericial
+         1 nueva carga
+         2 modificacion -->
+    </header>
+
+    <!-- navegacion interna -->
+    <div class="botonera-superior">
+        <button type="button" onclick="irA('solicitud')">solicitud</button>
+        <button type="button" onclick="irA('datos')">datos</button>
+        <button type="button" onclick="irA('labor')">Labor</button>
+        <button type="button" onclick="irA('resumen')">resumen</button>
+
+    </div>
+
+    <div class="box">
+        <form action="" id="nueva_carga" class="nueva-carga">
+
+            <!-- seccion solicitud -->
+            <h3 class="tit-secc" id="solicitud">Solicitud de peritos</h3>
+
+            <section id="secc_stud" class="bloque-formulario">
+
+                <div class="input">
+                    <label for="stud_dia" class="label">Fecha de solicitud
+                        <input type="date" name="stud_dia" id="stud_dia" class="label-input">
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="stud_hs" class="label">Hora de solicitud
+                        <input type="time" name="stud_hs" class="label-input">
+                    </label>
+                </div>
+
+                <div class="input2">
+                    <label for="dep_solic" class="label">dependencia solicitante
+                        <input type="text" name="dep_solic" id="dep_solic" class="label-input2">
+                    </label>
+                </div>
+
+                <div class="input2">
+                    <label for="instrucc_jud" class="label">Fiscalía o Juzgado interviniente
+                        <input type="text" name="instrucc_jud" id="instrucc_jud" class="label-input2">
+                    </label>
+                </div>
+
+                <div class="input2">
+                    <label for="caratula_ipp" class="label">carátula
+                        <input type="text" name="caratula_ipp" id="caratula_ipp" class="label-input2">
+                    </label>
+                </div>
+
+                <div class="input2">
+                    <label for="victima_nombre" class="label">víctima
+                        <input type="text" name="victima_nombre" id="victima_nombre" class="label-input2">
+                    </label>
+                    <!-- <div class="input">
+                        <label for="" class="label">d.n.i. de la víctima
+                            <input type="text" name="" id="" class="label-input">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="" class="label">si víctima óbito
+                            <input type="checkbox" name="" class="label-sub-checkbox">
+                        </label>
+                    </div> -->
+
+                    <!-- <label for="victima_dni" class="label-sub">d.n.i. de la víctima
+                        <input type="text" name="victima_dni" id="victima_dni" class="label-input-sub">
+                    </label>
+                    <label for="victima_obito" class="label-sub-checkbox">si víctima óbito
+                        <input type="checkbox" name="victima_obito" id="victima_obito" class="label-input-checkbox">
+                    </label> -->
+
+
+                </div>
+
+                <div class="input">
+                    <label for="" class="label">dni de la víctima
+                        <input type="text" name="" id="" class="label-input">
+                    </label>
+                </div>
+                <div class="input">
+                    <label for="" class="label">
+                        <input type="checkbox" name="" id="mostrar-extra" onchange="toggleSeccionExtra()"
+                            class="label-input-checkbox">si óbito
+                    </label>
+                </div>
+
+                <!-- <label>
+                    <input type="checkbox" id="mostrar-extra" onchange="toggleSeccionExtra()">
+                    Mostrar opciones avanzadas
+                </label> -->
+
+                <section id="secc_obito_extra" class="oculto">
+                    <div class="oculto-input1">
+                        <label for="" class="label">edad:
+                            <input type="number" class="label-input">
+                            <!-- <input type="text" name="" id="" class="label-input"> -->
+                        </label>
+                    </div>
+                    <div class="oculto-input2">
+                        <label for="" class="label">fecha y lugar de autopsia
+                            <input type="text" name="" id="" class="label-input2">
+                        </label>
+                    </div>
+
+                </section>
+
+                
+
+
+            </section>
+
+
+            <div class="form-carga-lef-container">
+
+                <p> hacia cuadros sadflkjg sldkfjh glskdjfgh dkjfg </p>
+
+            </div>
+
+
+
+            <p>sadflkjg sldkfjh glskdjfgh dkjfg </p>
+            <div class="cuadro">
+                3
+            </div>
+
+            <p>sadflkjg sldkfjh glskdjfgh dkjfg asdfsadfsdf asdfasdf sdafasdfsdfasd fsadfsad fsadfsadfas dfsadfsd
+                fasdfasdf sad</p>
+
+
+
+            <div class="cuadro">
+                1
+            </div>
+
+
+            <div class="form-carga-lef-container">
+
+                <p> hacia cuadrso sadflkjg sldkfjh glskdjfgh dkjfg </p>
+
+            </div>
+
+
+            <!-- seccion datos -->
+
+            <h3 class="tit-secc" id="datos">datos de la causa</h3>
+
+            <section id="secc_datos" class="bloque-formulario">
+
+                <h2 class="tit-secc">datos de la causa</h2>
+
+                <label for="stud_dia" class="dia">Fecha de solicitud
+                    <input type="date" name="stud_dia" id="stud-fecha">
+                </label>
+
+                <label for="stud_hora" class="hs">Hora de solicitud
+                    <input type="time">
+                </label>
+
+                <label for="dep_sctante" class="solicita">dependencia solicitante
+                    <input type="text">
+                </label>
+
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <div class="cuadro">
+                1
+            </div>
+            <div class="form-carga-lef-container">
+
+                <p> hacia cuadrso sadflkjg sldkfjh glskdjfgh dkjfg </p>
+
+            </div>
+
+
+
+            <!-- seccion labor -->
+
+            <h3 class="tit-secc" id="labor">labor pericial</h3>
+
+            <section id="secc_labor" class="bloque-formulario">
+
+                <h2 class="tit-secc">labor pericial</h2>
+
+                <label for="stud_dia" class="dia">Fecha de solicitud
+                    <input type="date" name="stud_dia" id="stud-fecha">
+                </label>
+
+                <label for="stud_hora" class="hs">Hora de solicitud
+                    <input type="time">
+                </label>
+
+                <label for="dep_sctante" class="solicita">dependencia solicitante
+                    <input type="text">
+                </label>
+
+
+            </section>
+
+            <div class="cuadro">
+                1
+            </div>
+
+
+            <!-- seccion resumen -->
+
+            <h3 class="tit-secc" id="resumen">resumen de informe</h3>
+
+            <section id="secc_resumen" class="bloque-formulario">
+
+                <h2 class="tit-secc">resumen</h2>
+
+                <label for="stud_dia" class="dia">Fecha de solicitud
+                    <input type="date" name="stud_dia" id="stud-fecha">
+                </label>
+
+                <label for="stud_hora" class="hs">Hora de solicitud
+                    <input type="time">
+                </label>
+
+                <label for="dep_sctante" class="solicita">dependencia solicitante
+                    <input type="text">
+                </label>
+
+
+            </section>
+
+        </form>
+    </div>
+
+
+
+    <!-- <footer>
+        &copy; 2025 Mi App de Datos
+    </footer> -->
+
+    <script>
+        function irA(id) {
+            const seccion = document.getElementById(id);
+            if (seccion) {
+                seccion.scrollIntoView({ behavior: 'smooth', block: "start" });
+            }
+        }
+
+        function toggleSeccionExtra() {
+            const checkbox = document.getElementById('mostrar-extra');
+            const seccion = document.getElementById('secc_obito_extra');
+
+            if (checkbox.checked) {
+                seccion.classList.remove('oculto');
+                seccion.classList.add('visible');
+            } else {
+                seccion.classList.remove('visible');
+                seccion.classList.add('oculto');
+            }
+        }
+    </script>
+
+    <!-- <script src="main.js"></script> -->
+</body>
+
+</html>

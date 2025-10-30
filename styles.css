@@ -31,8 +31,8 @@
     /* align-items: center; */
     color: #00ffff;
     /* border: 2px solid rgb(204, 234, 86); */
-    /* text-shadow: 0 0 15px #b2fc9d; */
-    /* text-shadow: 0 0 15px #ffd700; */
+    text-shadow: 0 0 15px #b2fc9d;
+    text-shadow: 0 0 15px #ffd700;
     /* filter: drop-shadow(0 0 8px #bf00ff) drop-shadow(0 0 16px #bf00ff); */
     /* background-color: transparent; */
     /* border: 2px solid #085959; */
@@ -83,46 +83,37 @@ label,
 input,
 button {
     font-size: 1rem;
-    /* 12px */
 }
 
 
 header {
     width: 100vw;
-    /* height: 12vh; */
-    height: 75px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #212121;
-
+    background-color: #2121219c;
     position: fixed;
     z-index: 1000;
-
-    border-bottom: .2rem solid #2dfb00;
-
-    /* gap: 5%; */
-    /* display: none; */
+    border-bottom: .1rem solid #2dfb00;
 }
 
 .logo-siglas-container {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 90%;
     width: 65%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* gap: 5%; */
-
 }
 
 .logo-container,
 .userpic {
     width: 35%;
-    height: 80%;
+    height: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     /* border: 1px solid #00ffff; */
@@ -144,37 +135,52 @@ header {
 
 .siglas-app {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
     letter-spacing: 1rem;
-    text-align: left;
-    filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 16px #00ffff);
+    /* text-align: left; */
+    filter: drop-shadow(0 0 5px #00ffff) drop-shadow(0 0 8px #00ffff);
     text-shadow: 0 0 35px #00ffff;
     color: #000000;
-    transition: 1s;
-
-    /* border: 1px solid #00ffff; */
+    transition: 1s .2s;
 }
 
 .nameSist-container {
+    max-width: 500px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+
+    border: 2px solid greenyellow;
     display: none;
+}
+
+.name-sist {
+    margin: 0;
+    font-size: .1rem;
+    letter-spacing: 0.3rem;
+    line-height: 2rem;
+    filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 8px #00ffff);
+    text-shadow: 0 0 15px #00ffff;
+    text-align: center;
+    color: #000000;
 }
 
 .user-menu-container {
     margin: 0;
     padding: 0;
-    height: 90%;
+    height: 80%;
     width: 35%;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: space-evenly; */
     align-items: center;
     gap: 5%;
-    /* border: 1px solid #27d446; */
+    border: 1px solid #27d446;
 }
 
 .user-container {
     margin: auto;
     padding: 0;
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -185,25 +191,31 @@ header {
 }
 
 .img-user {
-    height: 80%;
+    margin: auto;
+    height: 100%;
     filter: drop-shadow(0 0 5px #2dfb08) drop-shadow(0 0 8px #2dfb08);
     text-shadow: 0 0 35px #2dfb08;
+
+    cursor: pointer;
     border-radius: 50%;
 }
 
 .menu-hamb {
     margin: auto;
-    height: 90%;
+    height: 80%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     /* border: 1px solid #00ffff;        */
 }
 
 .ico-menu {
     margin: auto;
-    height: 80%;
-    filter: drop-shadow(0 0 5px #00ffff) drop-shadow(0 0 8px #00ffff);
-    text-shadow: 0 0 35px #00ffff;
+    height: 100%;
+    /* filter: drop-shadow(0 0 5px #00ffff) drop-shadow(0 0 8px #00ffff);
+    text-shadow: 0 0 35px #00ffff; */
+    filter: drop-shadow(0 0 5px #2dfb08) drop-shadow(0 0 8px #2dfb08);
+    text-shadow: 0 0 35px #2dfb08;
     border-radius: 50%;
     cursor: pointer;
     /* border: 3px solid #00ffff; */
@@ -376,32 +388,24 @@ main {
 
     /* top: 15%; */
     /* height: 85vh; */
-    
+
     /* background-color: #ddd; */
-    
+
     background: #000000;
     color: #e6f4f5;
     overflow: auto;
 }
 
 .cuadro {
-        margin: auto;
-        width: 80%;
-        height: 40vh;
-        background-color: #00ffff;
-        border: 3rem solid #fb24c5;
-        border-radius: 40rem;
-        color: #4318de;
-        font-size: 5rem;
-    }
-
-
-
-
-
-
-
-
+    margin: auto;
+    width: 80%;
+    height: 40vh;
+    background-color: #00ffff;
+    border: 3rem solid #fb24c5;
+    border-radius: 40rem;
+    color: #4318de;
+    font-size: 5rem;
+}
 
 
 
@@ -432,6 +436,21 @@ main {
 
 
 /* 📱 Tablets verticales y mayores */
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .nameSist-container {
+        display: block;
+    }
+
+
+
+}
+
+
+
 @media (min-width: 600px) {
     html {
         font-size: 15px;
@@ -595,25 +614,7 @@ main {
 
     }
 
-    .nameSist-container {
-        margin: 0;
-        padding: 0;
-        max-width: 500px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
 
-    .name-sist {
-        margin: 0;
-        font-size: 1.3rem;
-        letter-spacing: 0.3rem;
-        line-height: 2rem;
-        filter: drop-shadow(0 0 8px #00ffff) drop-shadow(0 0 8px #00ffff);
-        text-shadow: 0 0 15px #00ffff;
-        text-align: center;
-        color: #000000;
-    }
 
     .user-menu-container {
         margin: 0;

@@ -112,10 +112,10 @@ header {
     height: 80%;
     width: 30%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* gap: 5%; */
-    border: 1px solid #27d446;
+    /* border: 1px solid #27d446; */
 }
 
 .user-container {
@@ -167,6 +167,9 @@ header {
     transform: scale(1.2);
 }
 
+.img-user: hover {
+    transform: scale(1.2);
+}
 
 
 

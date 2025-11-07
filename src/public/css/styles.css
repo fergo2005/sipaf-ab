@@ -253,8 +253,9 @@ input#menu:checked~.nav-container {
 
 .bajo-header {
     width: 100%;
-    height: 50px;
-    background: transparent;
+    height: 80px;
+    /* background: transparent; */
+    background: #00ffff;
 }
 
 main {

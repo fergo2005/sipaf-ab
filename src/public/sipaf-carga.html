@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles0.css">
+    <link rel="stylesheet" href="css/styles-cp.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <title>S-Nueva-Carga</title>
+    <title>S-Nueva-LEF</title>
     <link rel="stylesheet" href="js/main.js"> <!-- falta la palabra para que se caregue al final de la pagina -->
 </head>
 
@@ -30,7 +31,7 @@
             </div>
         </div>
         <div class="name-sist-container">
-            <h1 class="name-sist">Sistema Integral de Pericias y Análisis Forense</h1>            
+            <h1 class="name-sist">Sistema Integral de Pericias y Análisis Forense</h1>
         </div>
         <div class="user-menu-container">
             <div class="user-container">
@@ -59,46 +60,140 @@
         </ul>
     </nav>
 
-    <main>
+    
+    <!-- navegacion interna -->
+    <div class="botonera-superior">
+        <button type="button__botonera" onclick="irA('solicitud')">solicitud</button>
+        <button type="button__botonera" onclick="irA('datos')">datos</button>
+        <button type="button__botonera" onclick="irA('labor')">Labor</button>
+        <button type="button__botonera" onclick="irA('resumen')">resumen</button>
+    </div>
 
-        <section class="secc-presentismo">
-            <h2>carga</h2>
-            <div class="cuadro">
-                carga
-            </div>
-            <p>situacion de revista y presentismo</p>
-        </section>
-
-        <section class="secc-estadistica">
-            <h2>estadísticas</h2>
-            <div class="cuadro">
-                1
-            </div>
-            <p>cantidd de intervenciones anuales</p>
-            <div class="cuadro">
-            2
-        </div>
-        <p>interenciones por especialidad</p>
-        
-        <div class="cuadro">
-            1
-        </div>
-        </section>
-
-        <section class="secc-recientes">
-            <h2>recientes</h2>
-            <div class="cuadro">
-            3
-        </div>
-        <p>ultimas intervenciones</p>
-        </section>
+    <main class="box">
+        <form action="" id="form_nueva_lef" class="form-nueva-lef">
+            <!-- seccion solicitud -->
+            <h3 class="tit-secc" id="solicitud">Solicitud de peritos</h3>
+            <section id="secc__stud" class="bloque-form">
 
 
+                <div class="input__date">
+                    <label for="stud_dia" class="label">Fecha de solicitud
+                        <input type="date" name="stud_dia" id="stud_dia" class="label-input">
+                    </label>
+                </div>
+                <div class="input__time">
+                    <label for="stud_hs" class="label">Hora de solicitud
+                        <input type="time" name="stud_hs" class="label-input">
+                    </label>
+                </div>
+                <div class="input__text">
+                    <label for="dep_solic" class="label">dependencia solicitante
+                        <input type="text" name="dep_solic" id="dep_solic" class="label-input2">
+                    </label>
+                </div>
+                <div class="input__text">
+                    <label for="instrucc_jud" class="label">Fiscalía o Juzgado interviniente
+                        <input type="text" name="instrucc_jud" id="instrucc_jud" class="label-input2">
+                    </label>
+                </div>
+                <div class="input__text">
+                    <label for="caratula_ipp" class="label">carátula
+                        <input type="text" name="caratula_ipp" id="caratula_ipp" class="label-input2">
+                    </label>
+                </div>
+
+                <div class="input__text">
+                    <label for="victima_nombre" class="label">víctima
+                        <input type="text" name="victima_nombre" id="victima_nombre" class="label-input2">
+                    </label>
+                </div>
+                <div class="input__text">
+                    <label for="" class="label">dni de la víctima
+                        <input type="text" name="" id="" class="label-input">
+                    </label>
+                </div>
+                <div class="input__checkbox">
+                    <label for="" class="label">
+                        <input type="checkbox" name="" id="mostrar-extra" onchange="toggleSeccionExtra()"
+                            class="label-input-checkbox">si óbito
+                    </label>
+                </div>
+                <section id="secc_obito" class="oculto">
+                    <div class="oculto-input1">
+                        <label for="" class="label">edad:
+                            <input type="number" class="label-input">
+                            <!-- <input type="text" name="" id="" class="label-input"> -->
+                        </label>
+                    </div>
+                    <div class="oculto-input2">
+                        <label for="" class="label">fecha y lugar de autopsia
+                            <input type="text" name="" id="" class="label-input2">
+                        </label>
+                    </div>
 
 
-        
+                    <p class="relleno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui deserunt voluptatem, nihil nulla neque dolores, illum porro quasi velit adipisci aperiam omnis obcaecati! Sunt dicta aperiam blanditiis voluptatibus assumenda.</p>
+
+                    <p class="relleno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui deserunt voluptatem, nihil nulla neque dolores, illum porro quasi velit adipisci aperiam omnis obcaecati! Sunt dicta aperiam blanditiis voluptatibus assumenda.</p>
+                </section>
+
+
+
+            </section>
+
+
+            <!-- seccion datos -->
+            <h3 class="tit-secc" id="datos">datos de la causa</h3>
+
+            <section id="secc__datos" class="bloque-form">
+                <h2 class="tit-secc">datos de la causa</h2>
+
+                <label for="stud_dia" class="dia">Fecha de solicitud
+                    <input type="date" name="stud_dia" id="stud-fecha">
+                </label>
+
+                <label for="stud_hora" class="hs">Hora de solicitud
+                    <input type="time">
+                </label>
+
+                <label for="dep_sctante" class="solicita">dependencia solicitante
+                    <input type="text">
+                </label>
+
+                <p class="relleno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui deserunt voluptatem, nihil nulla neque dolores, illum porro quasi velit adipisci aperiam omnis obcaecati! Sunt dicta aperiam blanditiis voluptatibus assumenda.</p>
+
+                    <p class="relleno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui deserunt voluptatem, nihil nulla neque dolores, illum porro quasi velit adipisci aperiam omnis obcaecati! Sunt dicta aperiam blanditiis voluptatibus assumenda.</p>
+            </section>
+
+
+
+
+
+            <section id="secc__labor" class="bloque-form">
+
+
+
+                <p class="relleno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui deserunt voluptatem, nihil nulla neque dolores, illum porro quasi velit adipisci aperiam omnis obcaecati! Sunt dicta aperiam blanditiis voluptatibus assumenda.</p>
+
+                    <p class="relleno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui deserunt voluptatem, nihil nulla neque dolores, illum porro quasi velit adipisci aperiam omnis obcaecati! Sunt dicta aperiam blanditiis voluptatibus assumenda.</p>
+            </section>
+
+
+
+            <section id="secc__resumen" class="bloque-form">
+
+
+
+                <p class="relleno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui deserunt voluptatem, nihil nulla neque dolores, illum porro quasi velit adipisci aperiam omnis obcaecati! Sunt dicta aperiam blanditiis voluptatibus assumenda.</p>
+
+                    <p class="relleno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui deserunt voluptatem, nihil nulla neque dolores, illum porro quasi velit adipisci aperiam omnis obcaecati! Sunt dicta aperiam blanditiis voluptatibus assumenda.</p>
+            </section>
+
+
+        </form>
     </main>
 
+    
 
 
 

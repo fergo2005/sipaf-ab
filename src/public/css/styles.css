@@ -310,13 +310,12 @@ main {
 
     body {
         width: 100%;
-        background: #324b2ca3;
+        background: #a2f18ed8;
     }
 
     .name-sist-container {
         display: block;
         max-width: 200px;
-
     }
 
 
@@ -327,11 +326,11 @@ main {
 
 
 
-/* extra no se de que */
+/* extra no se de que sera tabletas horizontal?*/
 
 @media (min-width: 800px) {
     html {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     body {
@@ -340,8 +339,11 @@ main {
 
     .name-sist-container {
         display: block;
-        max-width: 300px;
+        max-width: 280px;
+    }
 
+    .name-sist {        
+        font-size: .8rem;        
     }
 }
 
@@ -358,6 +360,10 @@ main {
 
     header {
         height: 75px;
+    }
+
+    body{
+        background: #70b8b8;
     }
 
     .logo-siglas-container {
@@ -409,12 +415,6 @@ main {
 
     }
 
-    main {
-
-        background: #70b8b8;
-
-
-    }
-
+    
 
 }

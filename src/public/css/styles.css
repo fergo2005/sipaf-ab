@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* <weight>: Use a value from 300 to 800 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+/* .open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+/* se define fuente base: 1rem = 12px */
+html {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --bg-color: #000000;
+    --header-color: #171717;
+    --dark-color: #f62;
+    --text-color1: #e6f4f5;
+    --text-color2: #000000;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+body,
+div,
+ul,
+li,
+a,
+h1,
+h2,
+nav,
+form,
+header,
+footer,
+label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--header-color);
+    position: fixed;
+    z-index: 1000;
+    border-bottom: .15rem solid #2dfb00;
+}
+
+.logo-siglas-container {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo-container {
+    height: 90%;
+    filter: drop-shadow(0 0 15px #00ffff) drop-shadow(0 0 35px #00ffff);
+}
+
+.logo-container img {
+    margin: auto;
+    height: 90%;
+    filter: drop-shadow(0 0 3px #00ffff) drop-shadow(0 0 8px #00ffff);
+}
+
+.siglas-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0 0 15px #00ffff) drop-shadow(0 0 35px #00ffff);
+}
+
+.siglas-app {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1rem;
+    filter: drop-shadow(0 0 3px #00ffff) drop-shadow(0 0 8px #00ffff);
+    text-shadow: 0 0 15px #00ffff;
+    color: var(--text-color2);
+    transition: 1s .5s;
+}
+
+.name-sist-container {
+    margin: auto;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    display: none;
+
+    /* border: 1px solid #2dfb00; */
+}
+
+.name-sist {
+    font-size: .8rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.2rem;
+    color: var(--text-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: var(--text-color1);
+}
+
+.user-menu-container {
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.user-container {
+    margin: auto;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    display: none;
+    padding: .6rem;
+    text-align: right;
+    color: #2dfb00;
+}
+
+.userpic {
+    margin: auto;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0 0 15px #00ffff) drop-shadow(0 0 35px #00ffff);
+}
+
+.userpic img {
+    margin: auto;
+    height: 90%;
+    /* filter: drop-shadow(0 0 15px #2dfb08) drop-shadow(0 0 15px #2dfb08); */
+    filter: drop-shadow(0 0 3px #00ffff) drop-shadow(0 0 8px #00ffff);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: center;
+}
+
+.menu-hamb {
+    margin: auto;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.ico-menu {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    filter: drop-shadow(0 0 15px #00ffff) drop-shadow(0 0 35px #00ffff);
+}
+
+.ico-menu img {
+    padding: .3rem;
+    /* filter: drop-shadow(0 0 3px #2dfb08) drop-shadow(0 0 8px #2dfb08); */
+    filter: drop-shadow(0 0 3px #00ffff) drop-shadow(0 0 8px #00ffff);
+}
+
+.ico-menu:hover,
+.userpic:hover {
+    transform: scale(1.2);
+}
+
+
+input[type="checkbox"] {
+    width: 40px;
+    display: none;
+}
+
+.nav-container {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #00000070;
+    max-width: 0;
+    right: 0;
+    transition: all 1s;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    right: 0;
+}
+
+.nav-menu li a {
+    padding: .7rem;
+    display: block;
+    cursor: pointer;
+    color: #00ffff;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: var(--header-color);
+    border-bottom: #2dfb00 1px solid;
+}
+
+input#menu:checked~.nav-container {
+    max-width: 100%;
+}
+
+.nav-menu li a:hover {
+    background-color: #9200c2;
+}
+
+.nav-menu li a:active {
+    background: #21b300;
+}
+
+.bajo-header {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+}
+
+main {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+
+
+
+    /* background: #25242430; */
+    color: #ffffff;
+
+}
+
+.cuadro {
+    margin: auto;
+    width: 60%;
+    height: 30vh;
+    background-color: #00ffff9d;
+    color: #4318de;
+    font-size: 3rem;
+    border: 5px solid #2dfb00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 📱 Tablets verticales y mayores */
+@media screen and (min-width: 560px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        width: 100%;
+        background: #324b2ca3;
+    }
+
+    .name-sist-container {
+        display: block;
+        max-width: 200px;
+
+    }
+
+
+
+
+}
+
+
+
+
+/* extra no se de que */
+
+@media (min-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        background: rgb(246, 123, 244);
+    }
+
+    .name-sist-container {
+        display: block;
+        max-width: 300px;
+
+    }
+}
+
+
+
+
+
+/* Escritorio */
+/* 💻 Escritorio grande */
+@media (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+
+    header {
+        height: 75px;
+    }
+
+    .logo-siglas-container {
+        width: 40%;
+    }
+
+    .name-sist-container {
+        display: block;
+        width: 30%;
+        max-width: 200px;
+
+    }
+
+    .user-menu-container {
+        width: 30%;
+    }
+
+    .user-container {
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    .username {
+        display: block;
+        max-width: 200px;
+        font-size: .8rem;
+        /* border: 4px solid #c341a2;        */
+    }
+
+    .nav-container {
+        /* position: absolute; */
+        position: fixed;
+        /* margin-top: 75px; */
+        top: 75px;
+
+        width: 25%;
+
+        right: 0;
+
+    }
+
+    .nav-menu {
+        /* text-align: left; */
+
+    }
+
+    .nav-menu li a {
+        font-size: 1.1rem;
+
+    }
+
+    main {
+
+        background: #70b8b8;
+
+
+    }
+
+
+}

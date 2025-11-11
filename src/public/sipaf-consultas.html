@@ -8,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-consultas.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <title>S-Consultas</title>
-    <link rel="stylesheet" href="js/main.js"> <!-- falta la palabra para que se caregue al final de la pagina -->
+    <title>Sipaf-Consultas</title>
+    <link rel="stylesheet" href="src/public/js/main.js">
+    <!-- falta la palabra para que se caregue al final de la pagina -->
 </head>
 
 <body>
@@ -23,25 +24,26 @@
         <!-- deberia haber sido sidebar/asidebar_sist/sidebar_namesist/sidebar_user-menu -->
         <div class="logo-siglas-container">
             <div class="logo-container">
-                <img class="logo" src="./img/ico_app/escudo_pc_sipaf.png" alt="No carga Icono">
+                <img class="logo" src="../public/img/ico_app/escudo_pc_sipaf.png" alt="No carga Icono">
             </div>
             <div class="siglas-container">
                 <strong class="siglas-app">sipaf</strong>
             </div>
         </div>
         <div class="name-sist-container">
-            <h1 class="name-sist">Sistema Integral de Pericias y Análisis Forense</h1>            
+            <h1 class="name-sist">Sistema Integral de Pericias y Análisis Forense
+            </h1>
         </div>
         <div class="user-menu-container">
             <div class="user-container">
-                <span class="username" id="username">gomez, fernando sebastián</span>
-                <div class="userpic">
-                    <img class="img-user1" src="../profiles/profile4989-20240131.png" alt="Imagen circular del usuario">
+                <span class="username" id="username">gomez, fernando sebastian </span>
+                <div class="ico-menu">
+                    <img src="../profiles/profile4989-20240131.png" alt="Imagen circular del usuario">
                 </div>
             </div>
-            <div class="menu-hamb">
-                <label for="menu" class="ico-menu">
-                    <img src="./img/ico_app/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Logo UV">
+            <div class="ico-menu">
+                <label for="menu">
+                    <img src="img/ico_app/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Logo UV">
                 </label>
             </div>
         </div>
@@ -51,52 +53,73 @@
     <nav class="nav-container">
         <ul class="nav-menu">
             <li><a href="../../index.html">dashboard</a></li>
-            <li><a href="sipaf-estadistica.html">estadística</a></li>
-            <li><a href="sipaf-presentismo.html">disponibilidad</a></li>
-            <li><a href="src/public/sipaf-carga.html">nueva lef</a></li>
-            <li><a href="src/public/sipaf-edita.html">edita lef</a></li>
+            <li><a href="sipaf-estadisticas.html">estadísticas</a></li>
+            <li><a href="sipaf-presentismo.html">presentismo</a></li>
+            <li><a href="sipaf-carga.html">nueva lef</a></li>
+            <li><a href="sipaf-edita.html">edita lef</a></li>
             <li><a href="sipaf-consultas.html">consultas</a></li>
         </ul>
     </nav>
 
     <main>
-
-        <section class="secc-presentismo">
+        <section class="seccion-titulos">
             <h2>consultas</h2>
-            <div class="cuadro">
-                consultas
+            <h3>por numero de lef</h3>
+        </section>
+
+        <section class="seccion-graficos">
+            resultados
+            <div class="grafico">
+                esp
+                <div class="imagen">
+                    resultados
+                </div>
+                <p class="clase-prueba">situacion de revista y presentismo</p>
+                <h3>subtit</h3>
+                <p class="clase-prueba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga doloremque culpa quae eligendi,
+                    ullam accusantium fugiat error iste harum nobis et delectus, laudantium, porro mollitia? Error
+                    fugiat itaque esse.</p>
             </div>
-            <p>situacion de revista y presentismo</p>
+
         </section>
 
-        <section class="secc-estadistica">
-            <h2>estadísticas</h2>
-            <div class="cuadro">
-                1
+        <section class="seccion-graficos">
+            espacio
+            <div class="grafico">
+                esp
+                <div class="imagen">
+                    grafico
+                </div>
+                <p class="clase-prueba">situacion de revista y presentismo</p>
+                <h3>subtit</h3>
+                <p class="clase-prueba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga doloremque culpa quae eligendi,
+                    ullam accusantium fugiat error iste harum nobis et delectus, laudantium, porro mollitia? Error
+                    fugiat itaque esse.</p>
             </div>
-            <p>cantidd de intervenciones anuales</p>
-            <div class="cuadro">
-            2
-        </div>
-        <p>interenciones por especialidad</p>
-        
-        <div class="cuadro">
-            1
-        </div>
+
         </section>
 
-        <section class="secc-recientes">
-            <h2>recientes</h2>
-            <div class="cuadro">
-            3
-        </div>
-        <p>ultimas intervenciones</p>
+        <section class="seccion-graficos">
+            espacio
+            <div class="grafico">
+                esp
+                <div class="imagen">
+                    grafico
+                </div>
+                <p class="clase-prueba">situacion de revista y presentismo</p>
+                <h3>subtit</h3>
+                <p class="clase-prueba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga doloremque culpa quae eligendi,
+                    ullam accusantium fugiat error iste harum nobis et delectus, laudantium, porro mollitia? Error
+                    fugiat itaque esse.</p>
+            </div>
+
         </section>
 
-
-
-
         
+
+
+
+
     </main>
 
 

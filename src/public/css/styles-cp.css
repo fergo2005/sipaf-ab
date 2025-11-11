@@ -36,7 +36,6 @@ body {
     --color-style1: #2dfb00;
     --color-style2: #00ffff;
     --color-style3: #bf00ff;
-
     background-color: var(--bg-color);
     width: 100%;
     text-transform: uppercase;
@@ -71,7 +70,7 @@ header {
     background: var(--header-color);
     position: fixed;
     z-index: 1000;
-    border-bottom: .15rem solid #2dfb00;
+    border-bottom: .1rem solid #2dfb00;
 }
 
 .logo-siglas-container {
@@ -80,7 +79,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .logo-container {
@@ -152,7 +150,7 @@ header {
     display: none;
     padding: .6rem;
     text-align: right;
-    color: #2dfb00;
+    color: var(--color-style1);
 }
 
 .userpic {
@@ -212,13 +210,14 @@ input[type="checkbox"] {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: var(--header-color);
+    background:#00000088;
     max-width: 0;
     right: 0;
     transition: .6s;
 }
 
 .nav-menu {
+    
     list-style: none;
     display: flex;
     flex-direction: column;
